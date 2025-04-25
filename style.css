@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+section{
+    
+    
+        display: flex;
+        justify-content: center; /* horizontal centering */
+        align-items: center; /* vertical centering */
+        height: 100vh; /* full viewport height */
+        column-gap: 20px;
+        background-image: url(./unnamed.jpg);
+        background-repeat: no-repeat;
+        
+   
+
+    
+}
+.items-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+        box-sizing: border-box;
+        width: 190px;
+        height: 254px;
+        background: rgba(217, 217, 217, 0.58);
+        border: 1px solid white;
+        box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+        backdrop-filter: blur(6px);
+        border-radius: 17px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        font-weight: bolder;
+        color: black;
+      }
+      
+      .card:hover {
+        border: 1px solid black;
+        transform: scale(1.05);
+      }
+      
+      .card:active {
+        transform: scale(0.95) rotateZ(1.7deg);
+      }
+   
+   
+
+
+label{
+    font-size: 40px;
+}
+
+button,
+button:focus {
+  font-size: 17px;
+  padding: 10px 25px;
+  border-radius: 0.7rem;
+  background-image: linear-gradient(rgb(82, 79, 251), rgb(82, 79, 255));
+  border: 2px solid rgb(50, 50, 50);
+  border-bottom: 5px solid rgb(50, 50, 50);
+  box-shadow: 0px 1px 6px 0px rgb(52, 64, 241);
+  transform: translate(0, -3px);
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+button:active {
+  transform: translate(0, 0);
+  border-bottom: 2px solid rgb(50, 50, 50);
+}
+@media (max-width: 768px) {
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100vh;
+        column-gap: 20px;
+        background-image: url(./unnamed.jpg);
+        background-repeat: no-repeat;
+    }
+}
+
